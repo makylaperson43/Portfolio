@@ -205,9 +205,10 @@ b {
     flex-wrap: wrap;
     flex-basis: 150px;
     grid-gap: 1rem;
-    margin-top: 30px;
+    margin-top: 70px;
     margin-left: 15px;
     margin-right: 15px;
+    margin-bottom: 100px;
     border-radius: .40rem;
     word-wrap: break-word;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -230,6 +231,10 @@ b {
   font-size: 20px;
   background-color: #422040;
   color: #cadbc8;
+  padding: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  
 }
 
 #html-align{
@@ -269,4 +274,31 @@ b {
 #java-align{
   margin-left: 100px;
   font-weight: 900;
+}
+
+a{
+  text-decoration: none;
+}
+
+.link-nav{
+  font-size: 20px;
+  float: left;
+}
+
+a.link-nav:hover {
+  color: #e0ac9d;
+}
+
+.projects2:hover{
+  background-color: #cadbc8;
+  color: black;
+}
+
+.project-link{
+  color: #e0ac9d;
+  font-weight: 900;
+}
+
+.project-link:hover{
+  color: black;
 }
