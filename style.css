@@ -1,38 +1,32 @@
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+html {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-
 body {
   background-color: #e0ac9d;
   padding: 0px;
   margin: 0px;
 }
 
-
 .nav {
   list-style-type: none;
-  margin: 0px;
-  padding: 10px 10px 10px 100px;
   overflow: hidden;
   background-color: #cadbc8;
   position: sticky;
   top: 0;
   border-bottom: 10px solid #422040;
+  width: 100%;
 }
-
+.container {
+  display: block;
+  width: 100%;
+  justify-content: center;
+}
 .nav a {
   float: left;
   padding: 10px;
+  margin-left: 15px;
 }
 
 .name {
@@ -58,7 +52,6 @@ body {
   margin-right: 150px;
 }
 
-
 .intro img {
   border-radius: 8px;
   width: 460px;
@@ -71,7 +64,7 @@ b {
   font-weight: bolder;
 }
 
-.aboutmakyla{
+.aboutmakyla {
   font-size: 20px;
   color: #cadbc8;
   background: #422040;
@@ -89,25 +82,34 @@ b {
   margin-top: 300px;
 }
 
-.skills3 {
+.skillWord {
   text-align: center;
   font-size: 50px;
   color: #404040;
-  margin-top: 2.5em;
-  border-top: 10px solid #422040;
-  padding: 15px;
-
 }
 
 .contact2 {
   float: left;
-  width: 50px;
+  width: 100px;
   display: inline;
-  margin-left:  185px;
+  margin-left: 165px;
+  margin-right: 25px;
+  transition: all .2s ease-in-out; 
+}
+
+.contact2:hover { 
+transform: scale(1.4); 
+}
+
+.contact3{
+  float: left;
+  width: 100px;
+  display: inline;
+  margin-left: 165px;
   margin-right: 25px;
 }
 
-.align-skills{
+.align-skills {
   align-items: center;
   justify-content: space-around;
   margin-left: 70px;
@@ -118,16 +120,12 @@ b {
   display: inline;
 }
 
-.skills-background{
+.skills-background {
   background-color: #cadbc8;
   border-bottom: 10px solid #422040;
   padding-bottom: 10px;
-}
-
-.skills4 {
-  width: 150px;
-  display: inline;
-  margin-left: 100px;
+  width: 100%;
+  border-top: 10px solid #422040;
 }
 
 .align-educa {
@@ -145,12 +143,12 @@ b {
   margin-left: 320px;
   width: 50em;
 }
-.contact2 img:hover{
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
+.contact2 img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
 }
 
-.projects2:hover{
+.projects2:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
@@ -166,67 +164,76 @@ b {
   margin-top: 100px;
 }
 
-.logo-words{
-    margin-top: -100px;
-    margin-left: 400px;
+.logo-words {
+  margin-top: -100px;
+  margin-left: 400px;
 }
 
-#align-skills-html{
-    width: 115px;
-    margin-bottom: 25px;
+#align-skills-html {
+  width: 115px;
+  margin-bottom: 25px;
 }
 
-#align-skills-css{
-    width: 60px;
+#align-skills-css {
+  width: 60px;
+  margin-left: 75px;
+  margin-bottom: 50px;
 }
 
-#align-skills-python{
-    width: 125px;
+#align-skills-python {
+  width: 125px;
 }
 
-#align-skills-java{
-    width: 60px;
+#align-skills-java {
+  width: 60px;
 }
 
-#html-align{
-    margin-left: 180px;
-    margin-bottom: 50px;
-    font-weight: 900;
+#align-skills-spring {
+  width: 200px;
+  margin-left: 1250px;
+  margin-top: -500px;
+  margin-bottom: 30px;
 }
 
-.contact-me{
+.html-align {
+  margin-left: -96px;
+  font-weight: 900;
+}
+
+.contact-me {
   text-align: center;
   color: #404040;
   font-size: 35px;
+  margin-bottom: 65px;
 }
 
-.align-projects{
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 150px;
-    grid-gap: 1rem;
-    margin-top: 70px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 100px;
-    border-radius: .40rem;
-    word-wrap: break-word;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: auto;
-    justify-content: center;
-    text-align: center;
+.align-projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 150px;
+  grid-gap: 1rem;
+  margin-top: 70px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 100px;
+  border-radius: 0.4rem;
+  word-wrap: break-word;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: auto;
+  justify-content: center;
+  text-align: center;
 }
 
-.move-projects{
+.move-projects {
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
 }
 
-.projects2{
+.projects2 {
   width: 10rem;
-  border-radius: .40rem;
+  border-radius: 0.4rem;
   height: auto;
   font-size: 20px;
   background-color: #422040;
@@ -234,72 +241,82 @@ b {
   padding: 10px;
   margin-left: 100px;
   margin-right: 100px;
-  
 }
 
-#html-align{
+#html-align {
   margin-left: -1155px;
 }
 
-#css-align{
-  margin-left: 88px;
+#css-align {
+  margin-left: -55px;
   font-weight: 900;
 }
 
-#python-align{
-  margin-left: 105px;
+#python-align {
+  margin-left: -99px;
   font-weight: 900;
 }
 
-#django-align{
-  margin-left: 90px;
+#django-align {
+  margin-left: -80px;
   font-weight: 900;
 }
 
-#bootstrap-align{
-  margin-left: 55px;
+#bootstrap-align {
+  margin-left: -90px;
   font-weight: 900;
 }
 
-#javascript-align{
-  margin-left: 45px;
+#javascript-align {
+  margin-left: -89px;
   font-weight: 900;
 }
 
-#git-align{
-  margin-left: 61px;
+#git-align {
+  margin-left: -60px;
   font-weight: 900;
 }
 
-#java-align{
-  margin-left: 100px;
+#java-align {
+  margin-left: -55px;
   font-weight: 900;
 }
 
-a{
+.spring-align {
+  margin-left: 1320px;
+  font-weight: 700;
+  margin-top: -45px;
+  font-size: 25px;
+}
+
+a {
   text-decoration: none;
 }
 
-.link-nav{
+.link-nav {
   font-size: 20px;
   float: left;
-  color: #422040
+  color: #422040;
 }
 
 a.link-nav:hover {
   color: #e0ac9d;
 }
 
-.projects2:hover{
+.projects2:hover {
   background-color: #cadbc8;
   color: black;
 }
 
-.project-link{
+.project-link {
   color: #e0ac9d;
   font-weight: 900;
 }
 
-.project-link:hover{
+/* .project-link:hover {
   color: black;
+} */
+
+.gmail-image{
+  margin-top: 10px;
 }
