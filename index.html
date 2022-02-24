@@ -3,177 +3,140 @@
   <head>
     <title>Ma'Kyla Person</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link
-      rel="stylesheet"
-      media="screen and (min-width: 900px)"
-      href="style.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width: 600px)"
-      href="small.css"
-    />
   </head>
   <body>
-    <header class="nav">
-      <a class="link-nav" href="#introduction">Introduction</a>
-      <a class="link-nav" href="#skills">Skills</a>
-      <a class="link-nav" href="#projects">Projects</a>
-      <a class="link-nav" href="#contact">Contact Me</a>
+    <header class="wholeNavBar">
+      <a class="wordsInsideNav" href="#introduction">Introduction</a>
+      <a class="wordsInsideNav" href="#skills">Skills</a>
+      <a class="wordsInsideNav" href="#projects">Projects</a>
+      <a class="wordsInsideNav" href="#contact">Contact Me</a>
     </header>
-    <div class="container">
-      <h1 class="name" id="introduction">
+    <div class="aboutMeContainer">
+      <h1 class="myName" id="introduction">
         <b>Ma'Kyla Person</b>
       </h1>
-      <h1 class="work">
+      <h1 class="myCareer">
         <b>Software Developer</b>
       </h1>
-      <div class="intro">
+      <div class="myPicture">
         <img src="images/IMG_1864.jpg" alt="Me at graduation" />
       </div>
-      <h2 class="aboutmakyla" id="skills">
+      <h2 class="aboutMakyla" id="skills">
         Hey, I'm from Water Valley, Mississippi. I'm currently attending Base
         Camp Coding Academy. I am working towards becoming a Software Developer.
         Before Base Camp, I had little to no experience with coding languages.
-        The current languages I have learned are Python, HTML, CSS, Django, and
-        Javascript. In my spare time I love going to work and spending time with
-        friends and family.
+        The current languages I have learned are Python, HTML, CSS, Django,
+        Javascript, and Java. In my spare time I love going to work and spending
+        time with friends and family.
       </h2>
     </div>
-    <div class="skills-background">
+    <div class="skillsBackground">
       <h3 class="skillWord">Skills</h3>
-      <img
-        id="align-skills-html"
-        class="align-skills"
-        src="images/html-logo.png"
-        alt="html logo"
-      />
-      <p class="html-align align-skills">HTML</p>
-
-      <img
-        class="align-skills"
-        id="align-skills-css"
-        src="images/css-logo.png"
-        alt="css logo"
-      />
-      <p id="css-align" class="align-skills">CSS</p>
-
-      <img
-        class="align-skills"
-        id="align-skills-python"
-        src="images/python-logo.png"
-        alt="python logo"
-      />
-      <p id="python-align" class="align-skills">Python</p>
-
-      <img
-        class="align-skills"
-        id="align-skills-django"
-        src="images/django-logo.png"
-        alt="django logo"
-      />
-      <p id="django-align" class="align-skills">Django</p>
-
-      <img
-        class="align-skills"
-        id="align-skills-bootstrap"
-        src="images/bootstrap.png"
-        alt="bootstrap logo"
-      />
-      <p id="bootstrap-align" class="align-skills">Bootstrap</p>
-
-      <img
-        class="align-skills"
-        id="align-skills-javascript"
-        src="images/javascript.png"
-        alt="javascript logo"
-      />
-      <p id="javascript-align" class="align-skills">Javascript</p>
-
-      <img
-        class="align-skills"
-        id="align-skills-git"
-        src="images/git-logo.png"
-        alt="git logo"
-      />
-      <p id="git-align" class="align-skills">Git</p>
-
-      <img
-        class="align-skills"
-        id="align-skills-java"
-        src="images/java.png"
-        alt="java logo"
-      />
-      <p id="java-align" class="align-skills">Java</p>
-      <div>
-        <img
-          class="align-skills"
-          id="align-skills-spring"
-          src="images/imageedit_6_4685274087.png"
-          alt="spring logo "
-        />
-        <p class="spring-align">Spring</p>
+      <div class="imagehtml">
+        <img class="html" src="images/html-logo.png" alt="html logo" />
+      </div>
+      <div class="imagecss">
+        <img class="css" src="images/css-logo.png" alt="css logo" />
+      </div>
+      <div class="imagepython">
+        <img class="python" src="images/python-logo.png" alt="python logo" />
+      </div>
+      <div class="imagedjango">
+        <img class="django" src="images/django-logo.png" alt="django logo" />
+      </div>
+      <div class="imagebootstrap">
+        <img class="bootstrap" src="images/bootstrap.png" alt="bootstrap logo" />
+      </div>
+      <div class="imagejavascript">
+        <img class="javascript" src="images/javascript.png" alt="javascript logo" />
+      </div>
+      <div class="imagejava">
+        <img class="java" src="images/java.png" alt="java logo" />
+      </div>
+      <div class="imagespring">
+        <img class="spring" src="images/imageedit_6_4685274087.png" alt="spring logo" />
+      </div>
+      <div class="imagepostgresql">
+        <img class="postgresql" src="images/imageedit_46_4626576965.png" alt="PostgreSQL logo"/>
       </div>
     </div>
-    <div id="projects" class="align-projects">
-      <div class="move-projects projects2">
+    <div id="projects" class="alignProjectsContainer">
+      <div class="projectsCard">
         <a
           class="project-link"
           href="https://github.com/makylaperson43/DjangoProject"
           target="_blank"
-          >Library</a>
-        <p>Django, HTML, and CSS</p>
-        <p>Here you can create an account and add books to the Library.</p>
+          >Library
+          <p>Django, HTML, and CSS</p>
+          <p>Here you can create an account and add books to the Library.</p></a
+        >
       </div>
-      <div class="move-projects projects2">
+      <div class="projectsCard">
         <a
           class="project-link"
           href="https://makylaperson43.github.io/KobeB/"
           target="_blank"
-          >G.O.A.T</a>
-        <p>HTML/CSS</p>
-        <p>It explains who I think is the greatest of all time</p>
+          >G.O.A.T
+          <p>HTML/CSS</p>
+          <p>It explains who I think is the greatest of all time</p></a
+        >
       </div>
-      <div class="move-projects projects2">
+      <div class="projectsCard">
         <a
           class="project-link"
           href="https://makylaperson43.github.io/charity/"
           target="_blank"
-          >Fictional Charity</a>
-        <p>HTML/CSS</p>
-        <p>Help the less fortunate</p>
+          >Fictional Charity
+          <p>HTML/CSS</p>
+          <p>In this project you can donate items to help college students</p></a
+        >
       </div>
-      <div class="move-projects projects2">
+      <div class="projectsCard">
         <a
           class="project-link"
           href="https://github.com/makylaperson43/pythonCRUD"
           target="_blank"
-          >Snapchat</a>
-        <p>Python</p>
-        <p>Create a Snapchat using CRUD</p>
+          >Snapchat
+          <p>Python</p>
+          <p>In this project I used Create, Read, Update, and Delete(CRUD) to create Snapchat accounts</p></a
+        >
+      </div>
+      <div class="projectsCard">
+        <a
+          class="project-link"
+          href="https://github.com/makylaperson43/JavaUnitProject2.0"
+          target="_blank"
+          >Airline Reservation
+          <p>Java and PostgreSQL</p>
+          <p>In this project you can reserve a flight using CRUD</p></a
+        >
       </div>
     </div>
     <footer class="contact-align" id="contact">
       <div>
-        <h1 class="contact-me">Contact Me!</h1>
-        <div class="contact3">
+        <h1 class="contact-meWord">Contact Me!</h1>
+        <div class="overAllContact">
           <a
             href="https://www.linkedin.com/in/ma-kyla-person-3969a1216/"
             target="_blank"
-            ><img
-              class="contact2"
+          >
+            <img
+              class="contact1"
               src="images/imageedit_27_4897483941.png"
               alt="Linkedin Logo"
           /></a>
         </div>
-        <div class="contact3">
+        <div class="overAllContact">
           <a href="mailto:makylaperson43@gmail.com" target="_blank"
-            ><img class="contact2 gmail-image" src="images/imageedit_32_2820761719.png" alt="gmail logo"
+            ><img
+              class="contact2 gmail-image"
+              src="images/imageedit_32_2820761719.png"
+              alt="gmail logo"
           /></a>
         </div>
-        <div class="contact3">
+        <div class="overAllContact">
           <a href="https://github.com/makylaperson43" target="_blank"
-            ><img class="contact2" src="images/github.png" alt="github logo"
+            ><img class="contact3" src="images/github.png" alt="github logo"
           /></a>
         </div>
       </div>
